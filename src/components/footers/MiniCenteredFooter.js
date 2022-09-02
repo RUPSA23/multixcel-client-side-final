@@ -2,7 +2,6 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import {Container as ContainerBase } from "components/misc/Layouts.js"
-import logo from "../../images/logo.svg";
 import { ReactComponent as WebIcon } from "../../images/world-wide-web-svgrepo-com.svg";
 import { ReactComponent as MailIcon } from "../../images/mail-svgrepo-com.svg";
 import { ReactComponent as Phoneicon } from "../../images/phone-svgrepo-com.svg";
@@ -35,8 +34,7 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
-            <LogoText>Treact</LogoText>
+            <LogoText>MultiXcel</LogoText>
           </LogoContainer>
           <LinksContainer>
             <Link href="/components/hero/BackgroundAsImage.js">Home</Link>

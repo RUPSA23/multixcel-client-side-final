@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from 'emailjs-com';
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -41,9 +42,24 @@ export default ({
   formAction = "#",
   formMethod = "get",
   textOnLeft = true,
+ 
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
+  function sendEmail(e){
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_27c37ym', 
+      'template_f3s0o9v', 
+      e.target, 
+      'HMeUxEZOpdFgISvk7' )
+      .then(res => {
+        console.log(res);
+        e.target.reset();
+      }).catch(err => {
+        console.log(err);
+      })
 
+  }
   return (
     <Container>
       <TwoColumn>
@@ -55,7 +71,7 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {/* {description && <Description>{description}</Description>} */}
-            <Form action={formAction} method={formMethod}>
+            <Form action={formAction} method={formMethod} onSubmit={sendEmail}>
               <Input type="email" name="email" placeholder="Your Email Address" />
               <Input type="text" name="name" placeholder="Full Name" />
               <Input type="text" name="phone" placeholder="Phone" />

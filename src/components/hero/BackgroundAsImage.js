@@ -1,12 +1,13 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+// import { HashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import Header, {
   NavLink,
   NavLinks,
-  PrimaryLink,
   LogoLink,
   NavToggle,
   DesktopNavLinks,
@@ -65,11 +66,10 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About Us</NavLink>
-      <NavLink href="#">Services</NavLink>
-      <NavLink href="#">Contact Us</NavLink>
-      {/* <NavLink href="#">Login</NavLink> */}
-    </NavLinks>,
+      <NavLink href="/#about-us">About Us</NavLink>
+      <NavLink href="/#services">Services</NavLink>
+      <NavLink href="/#contact-us">Contact Us</NavLink> 
+    </NavLinks>
   ];
 
   return (

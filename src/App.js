@@ -59,6 +59,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -67,7 +68,7 @@ export function App() {
 
   return (
     <Router>
-      <Switch>
+         <Switch>
         <Route path="/components/:type/:subtype/:name">
           <ComponentRenderer />
         </Route>
