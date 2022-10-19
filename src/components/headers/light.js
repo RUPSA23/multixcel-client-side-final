@@ -106,9 +106,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
         <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
           {links}
         </MobileNavLinks>
-        <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+        {/* <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
           {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
-        </NavToggle>
+        </NavToggle> */}
       </MobileNavLinksContainer>
     </Header>
   );
@@ -122,22 +122,22 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
 const collapseBreakPointCssMap = {
   sm: {
-    mobileNavLinks: tw`sm:hidden`,
+    // mobileNavLinks: tw`sm:hidden`,
     desktopNavLinks: tw`sm:flex`,
     mobileNavLinksContainer: tw`sm:hidden`
   },
   md: {
-    mobileNavLinks: tw`md:hidden`,
+    // mobileNavLinks: tw`md:hidden`,
     desktopNavLinks: tw`md:flex`,
     mobileNavLinksContainer: tw`md:hidden`
   },
   lg: {
-    mobileNavLinks: tw`lg:hidden`,
+    // mobileNavLinks: tw`lg:hidden`,
     desktopNavLinks: tw`lg:flex`,
     mobileNavLinksContainer: tw`lg:hidden`
   },
   xl: {
-    mobileNavLinks: tw`lg:hidden`,
+    // mobileNavLinks: tw`lg:hidden`,
     desktopNavLinks: tw`lg:flex`,
     mobileNavLinksContainer: tw`lg:hidden`
   }

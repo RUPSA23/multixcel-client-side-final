@@ -36,17 +36,17 @@ export default () => {
           <LogoContainer>
             <LogoText>MultiXcel</LogoText>
           </LogoContainer>
-          <LinksContainer>
-            <Link href="/components/hero/BackgroundAsImage.js">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="/components/forms/TwoColContactUsWithIllustration.js">Contact Us</Link>
-            <Link href="/components/features/DashedBorderSixFeatures">Services</Link>
-          </LinksContainer>
+          {/* <LinksContainer> */}
+            {/* <Link href="/components/hero/BackgroundAsImage.js">Home</Link> */}
+            {/* <Link href="#">About</Link> */}
+            {/* <Link href="/components/forms/TwoColContactUsWithIllustration.js">Contact Us</Link> */}
+            {/* <Link href="/components/features/DashedBorderSixFeatures">Services</Link> */}
+          {/* </LinksContainer> */}
           <SocialLinksContainer>
             <SocialLink href="https://stunning-fairy-f9945c.netlify.app/" target="_blank">
               <WebIcon />
             </SocialLink>
-            <SocialLink href="mailto:info@multixcelservices.com" target="_blank">
+            <SocialLink href="mailto:multixcel.xyz@gmail.com" target="_blank">
               <MailIcon />
             </SocialLink>
             <SocialLink href="tel:+91-9305938644" target="_blank">
