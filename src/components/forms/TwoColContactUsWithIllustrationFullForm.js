@@ -48,8 +48,8 @@ export default ({
   function sendEmail(e){
     e.preventDefault();
     emailjs.sendForm(
-      'service_27c37ym', 
-      'template_f3s0o9v', 
+      'service_p42l1xk', 
+      'template_gkb623u', 
       e.target, 
       'HMeUxEZOpdFgISvk7' )
       .then(res => {

@@ -46,7 +46,7 @@ export default () => {
             <SocialLink href="https://stunning-fairy-f9945c.netlify.app/" target="_blank">
               <WebIcon />
             </SocialLink>
-            <SocialLink href="mailto:multixcel.xyz@gmail.com" target="_blank">
+            <SocialLink href="mailto:multixcelservices@gmail.com" target="_blank">
               <MailIcon />
             </SocialLink>
             <SocialLink href="tel:+91-9305938644" target="_blank">
