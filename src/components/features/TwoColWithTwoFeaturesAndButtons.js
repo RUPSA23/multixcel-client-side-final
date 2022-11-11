@@ -88,6 +88,7 @@ export default ({
   // if (!features) features = defaultFeatures;
 
   return (
+    <div id="about-us">
     <Container>
       <TwoColumn>
         <ImageColumn>
@@ -114,5 +115,6 @@ export default ({
         </TextColumn>
       </TwoColumn>
     </Container>
+    </div>
   );
 };

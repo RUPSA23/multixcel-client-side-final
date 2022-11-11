@@ -61,6 +61,7 @@ export default ({
 
   }
   return (
+    <div id="contact-us">
     <Container>
       <TwoColumn>
         <ImageColumn>
@@ -83,5 +84,6 @@ export default ({
         </TextColumn>
       </TwoColumn>
     </Container>
+    </div>
   );
 };

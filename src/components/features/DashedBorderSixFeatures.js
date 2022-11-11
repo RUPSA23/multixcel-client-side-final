@@ -188,6 +188,7 @@ export default () => {
   ];
 
   return (
+    <div id="services">
     <Container>
       <ThreeColumnContainer>
         <Heading>
@@ -209,5 +210,6 @@ export default () => {
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>
+    </div>
   );
 };

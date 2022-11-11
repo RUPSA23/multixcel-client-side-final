@@ -1,22 +1,22 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-// import { HashLink } from 'react-router-hash-link';
-import { NavHashLink } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
+import { BrowserRouter } from "react-router-dom";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import Header, {
-  NavLink,
   NavLinks,
   LogoLink,
   NavToggle,
   DesktopNavLinks,
 } from "../headers/light.js";
+
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
-  ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
+  ${DesktopNavLinks}, ${NavLinks}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
   ${NavToggle}.closed {
@@ -64,12 +64,22 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
+  // const navLinks = [
+  //   <NavLinks key={1}>
+  //     <Link href="/#about-us">About Us</Link>
+  //     <Link href="/#services">Services</Link>
+  //     <Link href="/#contact-us">Contact Us</Link>
+  //   </NavLinks>
+  // ];
+
   const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/#about-us">About Us</NavLink>
-      <NavLink href="/#services">Services</NavLink>
-      <NavLink href="/#contact-us">Contact Us</NavLink> 
-    </NavLinks>
+    // <NavLinks key={1}>
+      <BrowserRouter>
+        <Link to="#about-us" >About Us</Link>
+        <Link to="#services">Services</Link>
+        <Link to="#contact-us">Contact Us</Link>
+      </BrowserRouter>
+    // </NavLinks>
   ];
 
   return (
